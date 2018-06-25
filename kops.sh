@@ -3,7 +3,7 @@
 kops create cluster \
     --cloud=aws \
     --dns=private \
-    --dns-zone=k8s.adityalabs.com \
+    --dns-zone=k8slabs.com \
     --zones=us-east-1a \
     --master-count=1 \
     --master-size=t2.micro \
@@ -19,7 +19,7 @@ kops create cluster \
     --topology=private \
     --associate-public-ip=false \
     --bastion=true \
-    --state=s3://labs.k8s.adityalabs.com \
-    --name=labs.k8s.krishnalabs.com \
+    --state=s3://kops-labs1 \
+    --name=mylabs.k8slabs.com \
     --authorization=rbac \
     --encrypt-etcd-storage
